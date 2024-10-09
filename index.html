@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Layanan Desa Kecamatan Krejengan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-slider, .services-section {
+            height: 100vh;
+        }
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-transparent text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="/api/placeholder/200/100" alt="Logo" class="h-12 mr-3">
+            </a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-blue-200 transition duration-300">Beranda</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition duration-300">Pantau Manfaat</a></li>
+                    <li><a href="#" class="hover:text-blue-200 transition duration-300">Lacak Pengaduan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero-slider relative overflow-hidden">
+        <div class="slide active" style="background-image: url('images/1.jpeg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <img src="/api/placeholder/175/175" alt="Ruang Layanan Desa" class="mx-auto mb-6">
+                    <h1 class="text-4xl font-bold mb-4">Ruang Layanan Desa</h1>
+                    <p class="text-xl mb-8">TRANSPARANSI DAN AKUNTABILITAS KEUANGAN DESA<br>KECAMATAN KREJENGAN</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('images/2.jpeg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h2 class="text-4xl font-bold mb-4">Ruang Layanan Desa</h2>
+                    <p class="text-xl">TRANSPARANSI DAN AKUNTABILITAS KEUANGAN DESA<br>KECAMATAN KREJENGAN</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('images/3.jpeg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h2 class="text-4xl font-bold mb-4">Ruang Layanan Desa</h2>
+                    <p class="text-xl">TRANSPARANSI DAN AKUNTABILITAS KEUANGAN DESA<br>KECAMATAN KREJENGAN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section bg-gray-100 flex items-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Pelayanan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <img src="/api/placeholder/150/150" alt="Transparansi" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Transparasi</h3>
+                    <p class="text-sm text-gray-600">Informasi Keuangan Desa di Kecamatan Krejengan</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <img src="/api/placeholder/150/150" alt="Pemanfaatan" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Paman DeDe</h3>
+                    <p class="text-sm text-gray-600">Pantau Manfaat Dana Desa berbasis Spasial</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <img src="/api/placeholder/150/150" alt="Trace Pengaduan" class="mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Trace Pengaduan</h3>
+                    <p class="text-sm text-gray-600">Dapatkan update informasi terkait pengaduan anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <img src="/api/placeholder/200/100" alt="Logo" class="mb-4">
+                    <p class="mb-4">Jl. Raya Karangren Krejengan</p>
+                    <p><strong>Phone:</strong> +62 (335) 422222</p>
+                    <p><strong>Email:</strong> krejengan@probolinggokab.go.id</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126506.68208379796!2d113.2893!3d-7.6883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7005c6ee45cbd%3A0xc6286280087dbb4f!2sKecamatan%20Krejengan!5e0!3m2!1sid!2sid!4v1699323610663!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-gray-900 text-white py-4 text-center text-sm">
+        &copy; 2024 Kecamatan Krejengan Kabupaten Probolinggo. All Rights Reserved
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
